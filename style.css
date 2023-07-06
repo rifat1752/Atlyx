@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: opx;
+}
+
+header {
+    background: url(/img/banner-bk.jpg);
+    color: white;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    height: 20px;
+    height: 20vh;
+}
+
+.nav-bar {
+    background-color:black;
+    height: 20vh;
+}
+
+.logo {
+    background-color: rgb(55, 175, 175);
+    width: 15vw;
+    height: 20vh;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.logo-image {
+    width: 60px;
+    height: 60px;
+}
+
+.logo-line {}
+
+.menu-list {}
