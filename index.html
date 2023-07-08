@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/5c218f1ac2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,9 +23,9 @@
                 </div>
                 <div class="menu">
                     <li class="items"><a href="#">Home</a></li>
-                    <li class="items"><a href="">Service</a></li>
-                    <li class="items"><a href="">Price</a></li>
-                    <li class="items"><a href="">Contact</a></li>
+                    <li class="items"><a href="#service">Service</a></li>
+                    <li class="items"><a href="#price">Price</a></li>
+                    <li class="items"><a href="#contact">Contact</a></li>
                 </div>
             </div>
         </nav>
@@ -36,8 +37,8 @@
             <a class="a-btn" href="#"><button class="btn">get started</button></a>
         </div>
     </header>
-    <main>
-        <div class="service-1">
+    <content>
+        <div id="service" class="service-1">
             <h1 class="serv-head">Smartest protection for your site</h1>
             <div class="service-type">
                 <div class="service-item">
@@ -85,7 +86,7 @@
                 </div>
             </div>
         </div>
-        <div class="price">
+        <div id="price" class="price">
             <p class="price-head">Check our pricing</p>
             <div class="price-container">
                 <div class="price-rate">
@@ -131,8 +132,47 @@
                 <img src="/img/client-6.png" style="width: 158px; height: 71px;" class="client-img" alt="">
             </div>
         </div>
-    </main>
-    <footer></footer>
+    </content>
+    <footer>
+        <div class="footer">
+            <div class="contact-container">
+                <div id="contact" class="contact">
+                    <h1>Contact Us</h1>
+                    <p>Te iisque labitur eos, nec sale argumentum scribentur,
+                        augue disputando in vim. Erat fugit sit at, ius lorem.</p>
+                    <address>Email : company_email@com <br>
+                        Phone : 361-688-5824 <br>
+                        Address : 4826 White Avenue, Corpus Christi, Texas</address>
+                </div>
+                <form class="form" action="submit-form">
+                    <div class="row">
+                        <div class="name">
+                            <label class="form-name" for="name">Name</label>
+                            <input class="name-in" type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                        </div>
+                        <div class="email">
+                            <label class="form-name" for="email">Email</label> <br>
+                            <input class="name-in" type="email" name="email" id="email" placeholder="Enter Your Email" required>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <label class="form-name" for="message">Message</label> <br>
+                        <textarea class="form-text" name="message" id="message" placeholder="text here" required></textarea>
+                    </div>
+                    <input type="submit" class="btn" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="social-media">
+            <p>copyright &copy;2023 Atlyx.</p>
+            <div class="sm-icon">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-medium"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

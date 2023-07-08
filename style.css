@@ -6,13 +6,21 @@
 
 header {
     background: url(/img/banner-bk.jpg);
+    background-size: contain;
     color: white;
     height: 100vh;
 }
 
-.container {
-    height: 100px;
+.nav-bar { 
+    overflow: hidden;
+    width: 100%;
+}
 
+.container {
+    width: 100%;
+    background-color: rgba(25, 45, 82, 0.801);
+    position: fixed;
+    height: 80px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -32,8 +40,8 @@ header {
 }
 
 .logo-image {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .logo-text {
@@ -83,7 +91,7 @@ a {
     /* Add this line */
     width: 50%;
     height: 400px;
-    margin-top: 20px;
+    margin-TOP: 150px;
     margin-left: 150px;
 }
 
@@ -121,13 +129,13 @@ a {
 }
 
 /* body css*/
-main {
+content {
     width: 100%;
     height: 200vh;
 }
 
 .service-1 {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,11 +235,11 @@ main {
 .price {
     /*background-color: aqua;*/
     width: 100%;
-    height: 150vh;
+    height: 140vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-top: 100px;
+    justify-content: space-around;
+    padding-top: 50px;
 
 }
 
@@ -258,7 +266,7 @@ main {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly ;
+    justify-content: space-evenly;
     box-shadow: 0 5px 10px 0 black;
 }
 
@@ -271,17 +279,19 @@ main {
 .price-rate p {
     font-size: 18px;
     font-weight: 500;
-    text-transform:capitalize;
+    text-transform: capitalize;
 }
+
 .price-rate span {
     font-size: 70px;
     font-weight: 700;
 }
-.price-info p{
+
+.price-info p {
     font-size: 15px;
-    text-transform: capitalize ;
+    text-transform: capitalize;
     font-weight: 400;
-    
+
 }
 
 .client {
@@ -292,7 +302,131 @@ main {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .client-img {
     width: 100px;
     height: 60px;
+}
+
+/* footer*/
+footer {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.contact-container {
+    background-image: url(/img/contact-bk.jpg);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact {
+    width: 400px;
+    height: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact h1 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.contact p {
+    font-size: 18PX;
+}
+
+.form {
+    width: 40%;
+    height: 300px;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.row {
+    display: flex;
+}
+
+.name,
+.email {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.message {
+    margin-top: 10px;
+}
+
+.form-name {
+    font-size: 18px;
+    font-family: 500;
+}
+
+.name-in {
+    height: 30px;
+    width: 200px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid yellow;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+}
+
+.form-text {
+    width: 440px;
+    height: 100px;
+    margin-top: 10px;
+    background: none;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+}
+
+.form .btn {
+    width: 445px;
+    border-radius: 10px;
+}
+
+.social-media {
+    height: 20vh;
+    background-color: rgb(25, 45, 82);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-media p {
+    width: 40%;
+    font-size: 16px;
+    word-spacing: 0.01em;
+}
+
+.sm-icon {
+    width: 150px;
+    font-size: 25px;
+}
+
+.sm-icon i {
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.sm-icon i:hover {
+    font-size: 26px;
+    color: yellow;
 }
