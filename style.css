@@ -18,7 +18,6 @@ header {
 
 .container {
     width: 100%;
-    background-color: rgba(25, 45, 82, 0.801);
     position: fixed;
     height: 80px;
     display: flex;
